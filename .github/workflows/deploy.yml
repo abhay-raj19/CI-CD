@@ -34,7 +34,7 @@ jobs:
       with:
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_USERNAME }}
-        key: ${{ secrets.SSH_KEY }}
+        password: ${{ secrets.PASSWORD }}
         script: |
           sudo docker pull abhayraj19/testingcicd:latest
           sudo docker stop testingcicd || true
