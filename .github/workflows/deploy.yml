@@ -39,4 +39,4 @@ jobs:
           sudo docker pull abhayraj19/testingcicd:latest
           sudo docker stop testingcicd || true
           sudo docker rm testingcicd || true
-          sudo docker run -d --name testingcicd -p 3005:3000 abhayraj19/testingcicd:latest
+          sudo docker run -d --restart always --name testingcicd -p 3005:3000 abhayraj19/testingcicd:latest
